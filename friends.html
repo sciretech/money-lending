@@ -1,0 +1,24 @@
+<div id="{$_id}" class="ui vertical segment">
+<div class="ui cards">
+	{rows}
+	{row}
+  <div class="card">
+    <div class="content">
+      <div class="header">{name}Name{/} ({$owed})</div>
+		<div class="meta">{$total_loan} loaned, {$total_repaid} repaid</div>
+      <div class="description">
+        {email}Mail{/}
+      </div>
+    </div>
+	  {button}
+    <a href="loans.php?friend_id={$id}" class="ui bottom attached button">
+      <i class="dollar sign icon"></i>
+      Existing loans
+    </a>
+	  {/}
+  </div>
+	{/row}
+	{/rows}
+	{$Content}
+</div>
+</div>

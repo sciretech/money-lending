@@ -7,7 +7,7 @@ class Repayment extends \atk4\data\Model {
 	function init()	{
 		parent::init();
 		$this->addFields([
-			['date', 'type'=>'date'],
+			['date', 'type'=>'date', 'default'=>new \DateTime()],
 			['amount', 'type'=>'money']
 		]);
 		$this->hasOne('friend_id', new Friend());
